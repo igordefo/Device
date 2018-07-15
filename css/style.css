@@ -446,7 +446,21 @@ ul {
   padding: 0;
   list-style: none; }
 
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.main-header {
+  position: relative;
+  margin-top: 40px;
+  padding: 55px 60px;
+  background-color: #f7e296;
+  opacity: 1; }
+
 .header__logo {
+  position: absolute;
+  top: -55px;
   color: #000000;
   font-family: "Gilroy - Extra Bold";
   font-size: 48px;
@@ -454,5 +468,19 @@ ul {
   line-height: 48px;
   text-transform: uppercase; }
 
+.header__search {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  background-color: #f7e296;
+  outline: none;
+  border: none; }
+
 .header__catalog-list {
   display: none; }
+
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
