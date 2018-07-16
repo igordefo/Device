@@ -10,38 +10,50 @@
 <body>
   <header class="main-header container">
     <h1 class="header__logo">Device</h1>
+    <ul class="header__menu-left">
+      <li><input type="text" placeholder="Поиск по сайту" class="header__search"></li>
+      <li class="dropdown-menu-content">
+        <a class="dropdown-menu" href="#">Каталог товаров</a>
+        <ul class="dropdown-content">
+          <li>
+            <ul class="dropdown-menu__list">
+              <li><a class="dropdown-menu__item" href="#">Виртуальная реальность</a></li>
+              <li><a class="dropdown-menu__item" href="#">Моноподы для селфи</a></li>
+              <li><a class="dropdown-menu__item" href="#">Экшн-камеры</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="dropdown-menu__list">
+              <li><a class="dropdown-menu__item" href="#">Фитнесс-браслеты</a></li>
+              <li><a class="dropdown-menu__item" href="#">Умные часы</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="dropdown-menu__list">
+              <li><a class="dropdown-menu__item" href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__items">
-          <input type="text" placeholder="Поиск по сайту" class="header__search">
-        </li>
-        <li class="main-nav__items">
+        <li class="main-nav__items main-nav__items--enter">
           <a href="#" class="main-nav__link">Войти</a>
         </li>
-        <li class="main-nav__items">
+        <li class="main-nav__items main-nav__items--compare">
           <a href="#" class="main-nav__link">Сравнить</a>
         </li>
-        <li class="main-nav__items">
+        <li class="main-nav__items main-nav__items--cart">
           <a href="#" class="main-nav__link">Корзина</a>
         </li>
       </ul>
-    </nav>
-    <section class="header__catalog">
-      <a href="#" class="header__catalog-opener" tabindex="0">Каталог товаров</a>
-      <ul class="header__catalog-list">
-        <li class="header__catalog-item">Виртуальная реальность</li>
-        <li class="header__catalog-item">Моноподы для селфи</li>
-        <li class="header__catalog-item">Экшн-камеры</li>
-        <li class="header__catalog-item">Фитнес-браслеты</li>
-        <li class="header__catalog-item">Умные часы</li>
-        <li class="header__catalog-item">Квадрокоптеры</li>
+      <ul class="main-nav-sublist">
+        <li class="sublist__items">Доставка</li>
+        <li class="sublist__items">Гарантия</li>
+        <li class="sublist__items">Контакты</li>
       </ul>
-    </section>
-    <ul class="header__menu">
-      <li class="header__menu-items">Доставка</li>
-      <li class="header__menu-items">Гарантия</li>
-      <li class="header__menu-items">Контакты</li>
-    </ul>
+    </nav>
   </header>
 </body>
 </html>
