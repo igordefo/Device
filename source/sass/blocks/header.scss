@@ -1,7 +1,11 @@
 .main-header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
   margin-top: 40px;
   padding: 55px 60px;
+  min-width: min-content;
+  min-height: 300px;
   background-color: #f7e296;
   opacity: 1;
 }
@@ -27,6 +31,40 @@
   border: none;
 }
 
-.header__catalog-list {
+.dropdown-content {
   display: none;
+  position: absolute;
+	z-index: 5;
+	top: 180px;
+	right: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 60px;
+	background: #f7e296;
+}
+
+.dropdown-menu-content:hover > .dropdown-content {
+  display: flex;
+}
+
+.dropdown-content:hover {
+  display: flex;
+}
+
+.header__catalog-opener {
+  display: block;
+}
+
+.dropdown-menu__item {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+.dropdown-menu__list {
+  margin-right: 65px;
 }
