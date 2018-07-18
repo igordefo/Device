@@ -461,6 +461,10 @@ ul {
           justify-content: space-between;
   margin-top: 40px;
   padding: 55px 60px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  min-height: 300px;
   background-color: #f7e296;
   opacity: 1; }
 
@@ -483,11 +487,41 @@ ul {
   outline: none;
   border: none; }
 
-.header__catalog-list {
-  display: none; }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 180px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 60px;
+  background: #f7e296; }
+
+.dropdown-menu-content:hover > .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.dropdown-content:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .header__catalog-opener {
   display: block; }
+
+.dropdown-menu__item {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px; }
+
+.dropdown-menu__list {
+  margin-right: 65px; }
 
 .main-nav__list, .main-nav-sublist {
   display: -webkit-box;
@@ -498,7 +532,7 @@ ul {
   margin-bottom: 54px; }
 
 .main-nav__items:first-child {
-  margin-right: 218px; }
+  margin-right: 222px; }
 
 .main-nav__items:nth-child(2) {
   margin-right: 40px; }
@@ -509,7 +543,11 @@ ul {
 .sublist__items:nth-child(2) {
   margin-right: 114px; }
 
+.main-nav__items {
+  position: relative; }
+
 .main-nav__link {
+  padding-left: 25px;
   color: #000000;
   font-family: "Open Sans";
   font-size: 15px;
@@ -517,7 +555,25 @@ ul {
   line-height: 30px;
   letter-spacing: 0.15px; }
 
-.header__catalog-opener, .sublist__items {
+.main-nav__items::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../img/common-icons.png);
+  background-repeat: no-repeat; }
+
+.main-nav__items--enter::before {
+  background-position: -35px 2px; }
+
+.main-nav__items--compare::before {
+  background-position: -67px 3px; }
+
+.main-nav__items--cart::before {
+  background-position: -100px 3px; }
+
+.dropdown-menu, .sublist__items {
   color: #000000;
   font-family: "Gilroy - Extra Bold";
   font-size: 18px;
