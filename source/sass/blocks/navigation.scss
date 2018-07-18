@@ -3,8 +3,12 @@
     
 }
 
-.main-nav__list, .header__search {
-    margin-bottom: 54px;
+.header__search {
+    margin-bottom: 36px;
+}
+
+.main-nav__list {
+    margin-bottom: 39px;
 }
 
 .main-nav__items:first-child {
@@ -16,7 +20,7 @@
 }
 
 .sublist__items:first-child {
-    margin-right: 38px;
+    margin-right: 34px;
 }
 
 .sublist__items:nth-child(2) {
