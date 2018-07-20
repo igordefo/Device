@@ -1,0 +1,130 @@
+.services {
+    margin-top: 74px;
+    min-height: 388px;
+    min-width: 900px;
+    padding-top: 100px;
+    background-image:
+      linear-gradient(to bottom,
+        rgba(229, 229, 229, 1) 0%,
+        rgba(229, 229, 229, 1) 100%),
+      linear-gradient(to bottom,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 100%);
+    background-clip: content-box, padding-box;
+    background-size: cover;
+}
+
+.services__slider {
+    position: relative;
+    display: flex;
+}
+
+.services-slider__controls {
+    margin-top: -102px;
+    padding: 80px 0 48px;;
+    width: 285px;
+    border-right: 7px solid #000;
+}
+
+.services__btn {
+    position: relative;
+    display: block;
+    margin-bottom: 21px;
+    padding: 10px 20px;
+    width: 160px;
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.services__btn::before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    margin-top: -4px;
+    content: '';
+    background-color: #ffc600;
+}
+
+.services__btn:hover::before {
+	top: 0;
+	height: 100%;
+	margin: 0;
+	transition: .2s;
+}
+
+.services-slider__controls .services__btn:active,
+#delivery-slide:checked ~ .services-slider__controls .services__btn[for='delivery-slide'],
+#warranty-slide:checked ~ .services-slider__controls .services__btn[for='warranty-slide'],
+#credit-slide:checked ~ .services-slider__controls .services__btn[for='credit-slide'] {
+    color: #ffe27f;
+}
+
+.services-slider__controls .services__btn:active::before,
+#delivery-slide:checked ~ .services-slider__controls .services__btn[for='delivery-slide']::before,
+#warranty-slide:checked ~ .services-slider__controls .services__btn[for='warranty-slide']::before,
+#credit-slide:checked ~ .services-slider__controls .services__btn[for='credit-slide']::before {
+	top: 0;
+	width: 280px;
+	height: 100%;
+	margin: 0;
+	background-color: #000;
+}
+
+
+.services__btn:last-of-type {
+    margin-bottom: 0;
+}
+
+.services__slide {
+    display: none;
+}
+
+.services__slider input[type=radio]:nth-child(1):checked ~ .slider-inner .services__slide:nth-child(1),
+.services__slider input[type=radio]:nth-child(2):checked ~ .slider-inner .services__slide:nth-child(2),
+.services__slider input[type=radio]:nth-child(3):checked ~ .slider-inner .services__slide:nth-child(3) {
+    display: block;
+}
+
+.services__slide {
+    margin: -75px 0 0 116px;
+    width: 693px;
+}
+
+.service-item__title {
+    margin-bottom: 33px;
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.21px;
+}
+
+.slide-del {
+    background-image: url(../../img/delivery.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  
+  .slide-gua {
+    background-image: url(../../img/warranty.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  
+  .slide-loan {
+    background-image: url(../../img/credit.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
