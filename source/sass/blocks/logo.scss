@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 94px;
+}
+
+.logo__items-active {
+    display: none;
+}
+
+.logo__items:hover .logo__items-nonactive {
+    display: none;
+}
+
+.logo__items:hover .logo__items-active {
+    display: block;
+}
