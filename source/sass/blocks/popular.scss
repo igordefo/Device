@@ -1,0 +1,39 @@
+.popular {
+    margin-top: 106px;
+}
+
+.popular__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background-color: #f8e296;
+}
+
+.popular__img--mono {
+    position: relative;
+}
+
+.popular__img--mono img {
+    position: absolute;
+    bottom: 0;
+}
+
+.popular__title {
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+
+.popular__img:hover {
+    background-color: #f0c52e;
+}
