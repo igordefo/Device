@@ -1,5 +1,12 @@
 .main-nav__list, .main-nav-sublist {
     display: flex;
+    width: 500px;
+    margin-left: 40px;
+    
+}
+
+.main-nav-sublist {
+    
     
 }
 
@@ -12,7 +19,7 @@
 }
 
 .main-nav__items:first-child {
-    margin-right: 222px;
+    margin-right: 216px;
 }
 
 .main-nav__items:nth-child(2) {
@@ -63,7 +70,7 @@
     background-position: -100px 3px;
 }
 
-.dropdown-menu, .sublist__items {
+.dropdown-menu, .sublist__items a {
     color: #000000;
     font-family: "Gilroy - Extra Bold";
     font-size: 18px;

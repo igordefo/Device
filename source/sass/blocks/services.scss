@@ -112,18 +112,21 @@
 }
 
 .slide-del {
+    position: absolute;
     background-image: url(../../img/delivery.png);
     background-repeat: no-repeat;
     background-position: top right;
   }
   
   .slide-gua {
+    position: absolute;
     background-image: url(../../img/warranty.png);
     background-repeat: no-repeat;
     background-position: top right;
   }
   
   .slide-loan {
+    position: absolute;
     background-image: url(../../img/credit.png);
     background-repeat: no-repeat;
     background-position: top right;

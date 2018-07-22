@@ -1,0 +1,106 @@
+.main-footer {
+    margin-top: 96px;
+    padding: 65px 0;
+    background-color: #464646;
+}
+
+.footer__logo {
+    margin: 0;
+    color: #ffc600;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.footer__adress, .main-nav__items--footer, .footer__phone {
+    margin: 0;
+    color: #ffffff!important;
+}
+
+.footer__first-row, .footer__second-row, .footer__third-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__first-row {
+    margin-bottom: 40px;
+}
+
+.footer__second-row {
+    margin-bottom: 70px;
+}
+
+.sublist__items--footer {
+    margin-right: 34px!important;
+}
+
+.footer-nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav__items---footer {
+    margin-right: 34px!important;
+}
+
+.yellow-line {
+    width: 80px;
+    height: 7px;
+    background-color: #ffc600;
+    align-self: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons__link--twitter::before {
+    background-position: 0 -32px;
+}
+
+.social-icons__link--fb::before {
+    background-position: -128px -32px;
+}
+
+.social-icons__link--vk::before {
+    background-position: -224px -32px;
+}
+
+.social-icons__link {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 11px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.3;
+  }
+
+.social-icons__link:hover {
+    opacity: 1;
+}
+
+.social-icons__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    opacity: .8;
+    background-image: url(../img/sprite.svg);
+    background-repeat: no-repeat;
+    background-size: 256px 64px;
+}
+
+.footer__copyright {
+    opacity: 0.5;
+}
+
+.footer__copyright:hover {
+    opacity: 1;
+}
